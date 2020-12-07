@@ -41,8 +41,8 @@ public class Ellipse extends Figure {
     }
    @Override
     public boolean containsClick(Point click) {
-        double check1 = Math.pow((click.x - (side1 + startPoint.x)), 2)/(Math.pow(side1, 2));
-        double check2 = Math.pow((click.y - (side2 + startPoint.y)), 2)/(Math.pow(side2, 2));
+        double check1 = Math.pow((click.getX() - (side1 + startPoint.getX())), 2)/(Math.pow(side1, 2));
+        double check2 = Math.pow((click.getY() - (side2 + startPoint.getY())), 2)/(Math.pow(side2, 2));
 
         boolean condition = check1 +check2 <= 1;
         return condition;

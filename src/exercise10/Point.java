@@ -1,8 +1,8 @@
 package exercise10;
 
 public class Point {
-    protected double x;
-    protected double y;
+    private double x;
+    private double y;
 
     public Point() {
         x = 0;
